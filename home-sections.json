@@ -1,0 +1,46 @@
+{
+  "community": {
+    "anchor": "community"
+  },
+  "coordination": {
+    "anchor": "coordination"
+  },
+  "components": {
+    "anchor": "school-components",
+    "children": [
+      {
+        "anchor": "community-involvement"
+      },
+      {
+        "anchor": "health-education"
+      },
+      {
+        "anchor": "physical-education"
+      },
+      {
+        "anchor": "family-engagement"
+      },
+      {
+        "anchor": "employee-wellness"
+      },
+      {
+        "anchor": "physical-environment"
+      },
+      {
+        "anchor": "social-emotional"
+      },
+      {
+        "anchor": "health-services"
+      },
+      {
+        "anchor": "nutrition-environment"
+      },
+      {
+        "anchor": "counseling-psychological"
+      }
+    ]
+  },
+  "tenet": {
+    "anchor": "five-youth-tenets"
+  }
+}
