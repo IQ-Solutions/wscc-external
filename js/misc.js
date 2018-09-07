@@ -1,18 +1,21 @@
-function wsccOpen(id) {
+function wsccOpen(id,e) {
   var elem = document.getElementById(id);
   var refState = $('#wsccrefstate');
+  var allowOpen = e === undefined?true:e.key !== 'Tab';
 
-  if(elem.style.display === "none" || elem.style.display === "") {
-    elem.style.display = "block";
+  if(allowOpen) {
+    if(elem.style.display === "none" || elem.style.display === "") {
+      elem.style.display = "block";
 
-    if(id == 'wscc_refs')
-      refState.attr('src','https://www.cdc.gov/TemplatePackage/3.0/images/minus12.png');
-  }
-  else if(elem.style.display === "block") {
-    elem.style.display = "none";
+      if(id == 'wscc_refs')
+        refState.attr('src','https://www.cdc.gov/TemplatePackage/3.0/images/minus12.png');
+    }
+    else if(elem.style.display === "block") {
+      elem.style.display = "none";
 
-    if(id == 'wscc_refs')
-      refState.attr('src','https://www.cdc.gov/TemplatePackage/3.0/images/plus12.png');
+      if(id == 'wscc_refs')
+        refState.attr('src','https://www.cdc.gov/TemplatePackage/3.0/images/plus12.png');
+    }
   }
 }
 
