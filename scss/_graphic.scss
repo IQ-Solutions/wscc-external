@@ -1,0 +1,650 @@
+%svgGrayscale {
+  filter: url(#grayscale);
+}
+%svgHoverGrayscale {
+  filter: url(#dark-grayscale)
+}
+.wscc-graphic {
+  position: relative;
+}
+.svg-graphic-container {
+  position: absolute;
+  top: 0;
+  left: 100%;
+
+  @media screen and (max-width: 766px) {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: none;
+  }
+}
+.svg-graphic {
+  position: absolute;
+  top: 0;
+
+  .inner-container {
+    position: relative;
+    width: 100%;
+  }
+  canvas {
+    display: block;
+    width:100%;
+    visibility: hidden;
+  }
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 766px) {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
+  &-footer {
+    text-align: center;
+    .back-to-top {
+      background-color: #f0f0f0;
+      color: #075290;
+      padding: 5px;
+
+      @media screen and (max-width: 601px) {
+        display: none;
+      }
+
+      &:hover,&:focus{
+        background-color: #075290;
+        color: #f0f0f0 !important;
+        text-decoration: none !important;
+      }
+    }
+  }
+  svg {
+    text {
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+}
+#components-ring {
+  text {
+    font-size: .7em;
+    font-weight: 900;
+  }
+}
+#coordination-ring {
+  cursor: pointer;
+  &.active {
+    .policy-ring {
+      stroke:#fed607;
+    }
+  }
+  &:hover {
+    .policy-ring {
+      stroke:#f6e9c1;
+    }
+  }
+  &.grayscale {
+    .policy-ring {
+      stroke: #fff;
+    }
+    &:hover {
+      .policy-ring {
+        stroke:#f6e9c1;
+      }
+    }
+  }
+}
+.community {
+  cursor: pointer;
+  &-path-1 {
+    fill: url(#linear-gradient);
+  }
+  &-path-2 {
+    fill:#fed607;
+  }
+  &-path-3 {
+    fill:#231f20;
+  }
+  &-path-4{
+    fill:url(#linear-gradient-2);
+  }
+  &-path-5{
+    fill:#ffd70b;
+  }
+}
+
+#community-involvement {
+  cursor: pointer;
+
+  &:hover {
+    .cls-16{fill:#639ba8;}
+    .cls-17{fill:url(#hover-linear-gradient-3);}
+    .cls-18{fill:#528791;}
+    .cls-19{fill:url(#hover-linear-gradient-4);}
+  }
+  &.grayscale {
+    opacity: 1;
+
+    &:hover {
+      .cls-16{fill:#639ba8;}
+      .cls-17{fill:url(#hover-linear-gradient-3);}
+      .cls-18{fill:#528791;}
+      .cls-19{fill:url(#hover-linear-gradient-4);}
+    }
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#health-education {
+  cursor: pointer;
+
+  &:hover {
+    .cls-28{fill:url(#hover-linear-gradient-5);}
+    .cls-16{fill:#639ba8;}
+    .cls-29{fill:#528791;}
+    .cls-30{fill:url(#hover-linear-gradient-6);}
+  }
+  &.grayscale {
+    opacity: 1;
+
+    &:hover {
+      .cls-28{fill:url(#hover-linear-gradient-5);}
+      .cls-16{fill:#639ba8;}
+      .cls-29{fill:#528791;}
+      .cls-30{fill:url(#hover-linear-gradient-6);}
+    }
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#physical-education {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#family-engagement {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#employee-wellness {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#physical-environment {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#social-emotional {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#counseling-psychological {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#health-services {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#nutrition-environment {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#healthy {
+  cursor: pointer;
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#challenged {
+  cursor: pointer;
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#supported {
+  cursor: pointer;
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#safe {
+  cursor: pointer;
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+#engaged {
+  cursor: pointer;
+
+  &.grayscale {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+.grayscale {
+  &.community {
+    &:hover {
+      path {
+        filter: none;
+      }
+    }
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #community-involvement {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #health-education {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #physical-education {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #family-engagement {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #employee-wellness {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #physical-environment {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #social-emotional {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #counseling-psychological {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #health-services {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #nutrition-environment {
+    opacity: 1;
+
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #youth {
+    @extend %svgGrayscale;
+  }
+  #healthy {
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #challenged {
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #supported {
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #safe {
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+  #engaged {
+    path {
+      @extend %svgGrayscale;
+    }
+  }
+}
+.cls-1{isolation:isolate;}
+.cls-2{fill:#fff;}
+.cls-3{clip-path:url(#clip-path);}
+.cls-111,.cls-4{fill:none;}
+.cls-7{fill:#231f20;}
+.cls-8{fill:#ffd70b;}
+.cls-9{fill:url(#linear-gradient-2);}
+.cls-10,.cls-13{mix-blend-mode:multiply;}
+.cls-11{mask:url(#mask);}
+.cls-12{mask:url(#mask-2);}
+.cls-13{opacity:0.3;}
+.cls-14{fill:#00aeef;}
+.cls-15{opacity:0.76;}
+.cls-16{fill:#639ba8;}
+.cls-17{fill:url(#linear-gradient-3);}
+.cls-18{fill:url(#New_Gradient_Swatch_1);}
+.cls-19{fill:url(#linear-gradient-4);}
+.cls-20{font-size:10px;font-family:OpenSans-Semibold, OpenSans Semibold;}
+.cls-102,.cls-104,.cls-105,.cls-20{font-weight:700;}
+.cls-21{letter-spacing:-0.01em;}
+.cls-22{letter-spacing:0em;}
+.cls-23{letter-spacing:0.01em;}
+.cls-24{letter-spacing:0.01em;}
+.cls-25{letter-spacing:-0.01em;}
+.cls-26{letter-spacing:-0.01em;}
+.cls-27{letter-spacing:0em;}
+.cls-28{fill:url(#linear-gradient-5);}
+.cls-29{fill:url(#New_Gradient_Swatch_1-2);}
+.cls-30{fill:url(#linear-gradient-6);}
+.cls-31{fill:url(#linear-gradient-7);}
+.cls-32{fill:url(#New_Gradient_Swatch_1-3);}
+.cls-33{fill:url(#linear-gradient-8);}
+.cls-34{fill:url(#New_Gradient_Swatch_1-4);}
+.cls-35{fill:url(#linear-gradient-9);}
+.cls-36{fill:url(#New_Gradient_Swatch_1-5);}
+.cls-37{fill:url(#linear-gradient-10);}
+.cls-38{fill:url(#New_Gradient_Swatch_1-6);}
+.cls-39{fill:url(#linear-gradient-11);}
+.cls-40{fill:url(#New_Gradient_Swatch_1-7);}
+.cls-41{fill:url(#linear-gradient-12);}
+.cls-42{opacity:0.49;fill:url(#New_Gradient_Swatch_1-8);}
+.cls-43{fill:url(#linear-gradient-13);}
+.cls-44{fill:url(#New_Gradient_Swatch_1-9);}
+.cls-45{fill:url(#linear-gradient-14);}
+.cls-46{fill:url(#linear-gradient-15);}
+.cls-47{fill:url(#linear-gradient-16);}
+.cls-48{fill:url(#linear-gradient-17);}
+.cls-49{fill:url(#New_Gradient_Swatch_1-10);}
+.cls-50{fill:url(#linear-gradient-18);}
+.cls-51{fill:url(#linear-gradient-19);}
+.cls-52{fill:url(#New_Gradient_Swatch_1-11);}
+.cls-53{fill:url(#linear-gradient-20);}
+.cls-54{fill:url(#linear-gradient-21);}
+.cls-55{fill:url(#New_Gradient_Swatch_1-12);}
+.cls-56{fill:url(#linear-gradient-22);}
+.cls-57{fill:url(#linear-gradient-23);}
+.cls-58{fill:url(#New_Gradient_Swatch_1-13);}
+.cls-59{fill:url(#linear-gradient-24);}
+.cls-60{fill:url(#linear-gradient-25);}
+.cls-61{fill:url(#linear-gradient-26);}
+.cls-62{fill:url(#linear-gradient-27);}
+.cls-63{fill:url(#New_Gradient_Swatch_1-15);}
+.cls-64{fill:url(#linear-gradient-28);}
+.cls-65{fill:url(#linear-gradient-29);}
+.cls-66{fill:url(#New_Gradient_Swatch_1-16);}
+.cls-67{fill:url(#linear-gradient-30);}
+.cls-68{letter-spacing:-0.05em;}
+.cls-69{letter-spacing:0em;}
+.cls-70{fill:url(#linear-gradient-31);}
+.cls-71{fill:url(#New_Gradient_Swatch_1-17);}
+.cls-72{fill:url(#linear-gradient-32);}
+.cls-73{letter-spacing:-0.01em;}
+.cls-74{letter-spacing:-0.03em;}
+.cls-75{fill:url(#linear-gradient-33);}
+.cls-76{fill:url(#New_Gradient_Swatch_1-18);}
+.cls-77{fill:url(#linear-gradient-34);}
+.cls-78{letter-spacing:0em;}
+.cls-79{letter-spacing:-0.01em;}
+.cls-80{fill:url(#linear-gradient-35);}
+.cls-81{fill:url(#New_Gradient_Swatch_1-19);}
+.cls-82{fill:url(#linear-gradient-36);}
+.cls-83{letter-spacing:0.01em;}
+.cls-84{letter-spacing:-0.01em;}
+.cls-85{fill:url(#linear-gradient-37);}
+.cls-86{fill:url(#New_Gradient_Swatch_1-20);}
+.cls-87{fill:url(#linear-gradient-38);}
+.cls-88{letter-spacing:-0.02em;}
+.cls-89{letter-spacing:-0.02em;}
+.cls-90{letter-spacing:-0.01em;}
+.cls-91{letter-spacing:0.03em;}
+.cls-92{fill:url(#linear-gradient-39);}
+.cls-93{fill:url(#New_Gradient_Swatch_1-21);}
+.cls-94{fill:url(#linear-gradient-40);}
+.cls-95{fill:url(#linear-gradient-41);}
+.cls-96{fill:url(#New_Gradient_Swatch_1-22);}
+.cls-97{fill:url(#linear-gradient-42);}
+.cls-98{letter-spacing:0em;}
+.cls-99{clip-path:url(#clip-path-2);}
+.cls-100{clip-path:url(#clip-path-3);}
+.cls-101{fill:url(#linear-gradient-43);}
+.cls-102{font-size:12.41px;fill:#020202;}
+.cls-102,.cls-104,.cls-105{font-family:OpenSans-Bold, OpenSans Bold;}
+.cls-103{fill:url(#linear-gradient-44);}
+.cls-104{font-size:14.19px;}
+.cls-105{font-size:12.41px;}
+.cls-106{fill:url(#linear-gradient-45);}
+.cls-107{fill:url(#linear-gradient-46);}
+.cls-108{fill:url(#linear-gradient-47);}
+.cls-109{fill:#a1cd3a;}
+.cls-110{clip-path:url(#clip-path-5);}
+.cls-111{stroke:#939598;stroke-width:2.33px;}
+.cls-112{fill:#595a5a;}
+.tenet-shadow{fill:url(#radial-gradient);}
+.policy-ring{
+  fill: none;
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width:22px;
+}
+.hover {
+  opacity: 1!important;
+  path {
+    filter: none!important;
+  }
+
+  &.community {
+    opacity: 1!important;
+  }
+  .h-cls-1{isolation:isolate;}
+  .h-cls-2{fill:#fff;}
+  .h-cls-3{clip-path:url(#clip-path);}
+  .h-cls-4,.h-cls-70,.h-cls-72{fill:none;}
+  .h-cls-5{fill:url(#hover-linear-gradient);}
+  .h-cls-6{fill:url(#hover-linear-gradient-2a);}
+  .h-cls-7{fill:#231f20;}
+  .h-cls-8{fill:url(#hover-linear-gradient-3a);}
+  .h-cls-9{fill:url(#hover-linear-gradient-2);}
+  .h-cls-10,.h-cls-13{mix-blend-mode:multiply;}
+  .h-cls-11{mask:url(#mask);}
+  .h-cls-12{mask:url(#mask-2);}
+  .h-cls-13{opacity:0.3;}
+  .h-cls-14{fill:#639ba8;}
+  .h-cls-15{fill:url(#hover-linear-gradient-3);}
+  .h-cls-16{fill:#528791;}
+  .h-cls-17{fill:url(#hover-linear-gradient-4);}
+  .h-cls-18{font-size:10px;font-family:OpenSans-SemiBold, OpenSans SemiBold;}
+  .h-cls-18,.h-cls-66,.h-cls-67,.h-cls-68{font-weight:700;}
+  .h-cls-19{letter-spacing:-0.01em;}
+  .h-cls-20{letter-spacing:0em;}
+  .h-cls-21{letter-spacing:0.01em;}
+  .h-cls-22{letter-spacing:0.01em;}
+  .h-cls-23{letter-spacing:-0.01em;}
+  .h-cls-24{letter-spacing:-0.01em;}
+  .h-cls-25{letter-spacing:0em;}
+  .h-cls-26{fill:url(#hover-linear-gradient-5);}
+  .h-cls-27{fill:url(#hover-linear-gradient-6);}
+  .h-cls-28{fill:url(#hover-linear-gradient-7);}
+  .h-cls-29{fill:#51868f;}
+  .h-cls-30{fill:url(#hover-linear-gradient-8);}
+  .h-cls-31{letter-spacing:0em;}
+  .h-cls-32{letter-spacing:-0.01em;}
+  .h-cls-33{letter-spacing:-0.01em;}
+  .h-cls-34{letter-spacing:0.01em;}
+  .h-cls-35{letter-spacing:0em;}
+  .h-cls-36{letter-spacing:0.01em;}
+  .h-cls-37{fill:url(#hover-linear-gradient-9);}
+  .h-cls-38{fill:#528790;}
+  .h-cls-39{fill:url(#hover-linear-gradient-10);}
+  .h-cls-40{letter-spacing:-0.05em;}
+  .h-cls-41{fill:url(#hover-linear-gradient-11);}
+  .h-cls-42{fill:url(#hover-linear-gradient-12);}
+  .h-cls-43{letter-spacing:-0.01em;}
+  .h-cls-44{letter-spacing:-0.03em;}
+  .h-cls-45{fill:url(#hover-linear-gradient-13);}
+  .h-cls-46{fill:url(#hover-linear-gradient-14);}
+  .h-cls-47{fill:url(#hover-linear-gradient-15);}
+  .h-cls-48{fill:url(#hover-linear-gradient-16);}
+  .h-cls-49{letter-spacing:0.01em;}
+  .h-cls-50{letter-spacing:-0.01em;}
+  .h-cls-51{fill:url(#hover-linear-gradient-17);}
+  .h-cls-52{fill:#51878f;}
+  .h-cls-53{fill:url(#hover-linear-gradient-18);}
+  .h-cls-54{letter-spacing:-0.02em;}
+  .h-cls-55{letter-spacing:-0.02em;}
+  .h-cls-56{letter-spacing:-0.01em;}
+  .h-cls-57{letter-spacing:0.03em;}
+  .h-cls-58{fill:url(#hover-linear-gradient-19);}
+  .h-cls-59{fill:url(#hover-linear-gradient-20);}
+  .h-cls-60{fill:url(#hover-linear-gradient-21);}
+  .h-cls-61{fill:url(#hover-linear-gradient-22);}
+  .h-cls-62{letter-spacing:0em;}
+  .h-cls-63{clip-path:url(#clip-path-2);}
+  .h-cls-64{clip-path:url(#clip-path-3);}
+  .h-cls-65{fill:#80a83f;}
+  .h-cls-66{font-size:12.41px;fill:#020202;}
+  .h-cls-66,.h-cls-67,.h-cls-68{font-family:OpenSans-Bold, OpenSans Bold;}
+  .h-cls-67{font-size:14.19px;}
+  .h-cls-68{font-size:12.41px;}
+  .h-cls-69{fill:#a1cd3a;}
+  .h-cls-70{stroke:#f6e9c1;stroke-miterlimit:10;stroke-width:22px;}
+  .h-cls-71{clip-path:url(#clip-path-5);}
+  .h-cls-72{stroke:#939598;stroke-width:2.33px;}
+  .h-cls-73{fill:#595a5a;}
+}
+.disabled {
+  cursor: default!important;
+  g {
+    cursor: default!important;
+  }
+  &.grayscale {
+    opacity: 1;
+    path {
+      @extend %svgGrayscale;
+    }
+    &:hover {
+      path {
+        @extend %svgGrayscale;
+      }
+    }
+  }
+  &.community {
+    &.grayscale {
+      opacity: 1;
+      path {
+        @extend %svgGrayscale;
+      }
+      &:hover {
+        path {
+          @extend %svgGrayscale;
+        }
+      }
+    }
+  }
+}

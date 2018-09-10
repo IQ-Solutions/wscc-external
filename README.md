@@ -55,3 +55,7 @@ following fashion:
 ## Images and other Misc files
 Although efforts were made to use existing CSS and images there are images and css files packaged.
 The file paths are relative to the directory the index and sub folders are in and may need to be adjusted.
+
+### SCSS
+The `wscc.css` files is compiled from `scss/wscc.scss`. An internal gulp process was used to compile 
+but any scss compiler pointed to the dist folder will work fine.
